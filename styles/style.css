@@ -10,66 +10,89 @@ html {
 body {
   height:100vh;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  color:#25167a;
+  color:#5c5c5c;
   width:30em;
   background-color: #fff;
   margin:0 auto;
 }
 body > * {
-  padding:.75rem
-}
-img {
-  max-width: 100%;
-}
-ul {
-  list-style: none;
-  padding:0;
-}
-a {
-  color: #25167a;
+  padding:.75rem;
 }
 
-li a {
-  cursor: pointer;
-  border: none;
-  font-weight: normal;
-  display: flex;
-  justify-content: flex-start;
-  align-items:stretch;
-  margin: .75rem 0;
-  overflow: hidden;
-  position: relative;
+header{
+  background-image: url(../assets/Buurtcampus\ Oost-logo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 5em;
+}
+
+h1{
   text-align: center;
+  font-size: 18px;
+}
+
+h2{
+  margin-top: 3em;
+  text-align: center;
+  font-size: 16px;
+}
+
+h3{
+  color: #5c5c5c;
+  text-align: center;
+}
+
+p{
+  text-align: center;
+  font-size: 14px;
+  margin: 2em;
+  border-bottom-style: solid;
+  border-bottom-color: #7f7e7e;
+  padding-bottom: 2em;
+}
+
+ul{
+  list-style: none;
+  justify-content: space-between;
+}
+.container {
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  scroll-snap-type: y mandatory;
+  margin-top: -3em;
+  display: grid;
+}
+
+.container.x {
+  width: 45vh;
+  height: 30em;
+  display: grid; /* Verticale scroll  */
+} 
+
+.x.mandatory-scroll-snapping {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  overflow-x: hidden; /*Horizontale scroll verwijderen*/
+  width: fit-content;
+}
+
+img{
+  width: 99%;
+  height:75%;
+  border-style: solid;
+  border-color: #b5b5b5;
+}
+
+a{
   text-decoration: none;
+  text-overflow: hidden;
 }
-li a span {
-  background-color: #25167a;
-  color:#fff;
-  padding:.5rem 0;
-  flex:1 auto;
 
+footer{
+  background-color: #5c5c5c;
+  padding: 2em;
 }
-li a:hover span {
-  background-color: #685FAE;
-}
-li a:hover svg path {
-  fill: #685FAE;
-}
-a svg {
-  height: 41px;
-  width: 36px;
-  fill: #25167a;
-}
-a svg:last-child {
-  transform: rotate(
-    180deg
-    );
-}
-header a {
-  width: 300px;
-  height: 42px;
-  display:block
-}
-main {
 
+.voeg{
+  float: right;
 }
