@@ -14,6 +14,7 @@ body {
   background-color: #fff;
   margin:0 auto;
 }
+
 body > * {
   padding:.75rem;
 }
@@ -22,7 +23,36 @@ body > * {
 {
   position: relative;
   bottom: 3em;
+  width: 20em;
 }
+button{
+  background-color: white;
+  color: rgb(242, 110, 33);
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 1.9px;
+  border-color: rgba(70, 121, 51, 1);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .3rem;
+  padding-bottom: .3rem;
+}
+
+button:hover{
+
+  background-color: rgba(139, 187, 6, 0.412); 
+
+}
+
+
+.doneer{
+  position: relative;
+  bottom: 5.2rem;
+  left: 21rem;
+  font-weight: bold;
+  font-size: 18px;
+}
+
 
 header{
   display: flex;
@@ -48,6 +78,7 @@ h2{
 h3{
   color: #5c5c5c;
   text-align: center;
+  margin-bottom: 5em;
 }
 
 p{
@@ -60,33 +91,18 @@ p{
 }
 
 ul{
+  position: relative;
+  bottom: 3em;
   list-style: none;
   justify-content: space-between;
-}
-.container {
-  overflow-y: auto;
-  overscroll-behavior-y: contain;
-  scroll-snap-type: y mandatory;
-  margin-top: -3em;
-  display: grid;
+  overflow: hidden;
+  width: 26em;
 }
 
-.container.x {
-  width: 45vh;
-  height: 30em;
-  display: grid; /* Verticale scroll  */
-} 
 
-.x.mandatory-scroll-snapping {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  overflow-x: hidden; /*Horizontale scroll verwijderen*/
-  width: fit-content;
-}
-
-img{
-  width: 99%;
-  height:75%;
+.stekje{
+  width: 23rem;
+  height:20rem;
   border-style: solid;
   border-color: #b5b5b5;
 }
@@ -101,7 +117,5 @@ footer{
   padding: 2em;
 }
 
-.voeg{
-  float: right;
-}
+
 
