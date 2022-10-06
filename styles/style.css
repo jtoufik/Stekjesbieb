@@ -109,7 +109,7 @@ ul{
 
 
 a:hover img{
-  box-shadow:  0em 0 1em  rgb(159, 215, 2);
+  box-shadow:  0em 0 2em  rgb(160, 217, 5);
 }
 
 
@@ -126,7 +126,6 @@ a{
   text-decoration: none;
   text-overflow: hidden;
 }
-
 
 
 footer{
