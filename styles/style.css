@@ -31,7 +31,8 @@ body > * {
   bottom: 3em;
   width: 20em;
 }
-button{
+
+.terug{
   background-color: white;
   color: rgb(242, 110, 33);
   border-style: solid;
@@ -43,8 +44,10 @@ button{
   padding-top: .3rem;
   padding-bottom: .3rem;
 }
-
-button:hover{
+.terug:hover{
+  background-color: rgba(139, 187, 6, 0.412); 
+}
+.doneer:hover{
   background-color: rgba(139, 187, 6, 0.412); 
 }
 
@@ -55,6 +58,16 @@ button:hover{
   left: 1rem;
   font-weight: bold;
   font-size: 18px;
+  background-color: white;
+  color: rgb(242, 110, 33);
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 1.9px;
+  border-color: rgba(70, 121, 51, 1);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .3rem;
+  padding-bottom: .3rem;
 }
 
 
@@ -117,15 +130,15 @@ main{
 .overzicht2{
   grid-area: blok2;
   background-color: rgba(112, 152, 0, 0.45);
+  margin: 0;
 }
 
 ul{
   list-style-type: none;
   position: relative;
-
-  list-style: none;
+  list-style: none; 
   justify-content: space-between;
-
+  margin: 0;
 }
 
 
@@ -153,7 +166,6 @@ a{
 footer{
   background-color:rgba(242, 110, 33, 0.578);
   position: relative;
-  bottom: 18em;
 }
 
 h4{
