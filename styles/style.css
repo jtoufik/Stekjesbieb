@@ -45,9 +45,7 @@ button{
 }
 
 button:hover{
-
   background-color: rgba(139, 187, 6, 0.412); 
-
 }
 
 
@@ -75,7 +73,6 @@ h2{
   grid-area: h2;
   position: relative;
   top: 12.5em;
-
 }
 
 h3{
@@ -112,12 +109,12 @@ main{
 
 }
 
-.blok1{
+.overzicht1{
   grid-area: blok1;
   background-color: rgba(70, 121, 51, 0.4);
 }
 
-.blok2{
+.overzicht2{
   grid-area: blok2;
   background-color: rgba(112, 152, 0, 0.45);
 }
@@ -138,7 +135,6 @@ a:hover img{
 
 
 .stekje{
-
   margin-top: 3em;
   max-width: 25em;
   min-width: 5em;
