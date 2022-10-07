@@ -145,10 +145,14 @@ ul{
   list-style-type: none;
   list-style: none; 
   justify-content: space-between;
-  margin: 0;
-  padding-top: 2em;
+  padding:0 auto;
+
 }
 
+li{
+  text-align: center;
+  margin-top: 7em;
+}
 
 a:hover img{
   box-shadow:  0em 0 1em   rgb(242, 110, 33);
@@ -156,14 +160,16 @@ a:hover img{
 
 
 .stekje{
-  margin-top: 3em;
-  max-width: 25em;
-  min-width: 5em;
+
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
   width: 9.5rem;
   border-style: solid;
   border-color: #b5b5b5;
   overflow: hidden;
   display: block;
+  margin: 0 auto;
 }
 
 a{
