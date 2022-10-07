@@ -16,7 +16,7 @@ html {
 body {
   color:rgba(70, 121, 51, 1);
   width: 30em;
-  max-height: 104em;
+  max-height: 94em;
   background-color: #fff;
   margin:0 auto;
 }
@@ -84,8 +84,14 @@ h2{
   text-align: center;
   font-size: 1rem;
   grid-area: h2;
-  position: relative;
-  top: 12.5em;
+  position:absolute;
+  top: 17em;
+  left: 8em;
+  color:rgba(34, 77, 18, 0.838);
+  background-color: rgba(255, 255, 255, 0.347); 
+  padding: .5em;
+  border-radius: 10px;
+
 }
 
 h3{
@@ -99,8 +105,6 @@ h3{
 .koptext{
   color:rgba(34, 77, 18, 0.838);
   max-width: 30em;
-  margin: 2em;
-  margin-bottom: 5em;
   border-bottom-style: solid;
   border-bottom-color: rgba(70, 121, 51, 1);;
   padding-bottom: 2em;
@@ -117,14 +121,18 @@ main{
     ' blok1 blok2'
     ' blok1 blok2'
     ' blok1 blok2';
-  position: relative;
-  bottom: 17em;
+  padding: 0;
+}
 
+main, footer{
+  position: relative;
+  bottom: 17.9em;
 }
 
 .overzicht1{
   grid-area: blok1;
   background-color: rgba(70, 121, 51, 0.4);
+  margin: 0;
 }
 
 .overzicht2{
@@ -135,10 +143,10 @@ main{
 
 ul{
   list-style-type: none;
-  position: relative;
   list-style: none; 
   justify-content: space-between;
   margin: 0;
+  padding-top: 2em;
 }
 
 
@@ -165,7 +173,6 @@ a{
 
 footer{
   background-color:rgba(242, 110, 33, 0.578);
-  position: relative;
 }
 
 h4{
@@ -184,3 +191,11 @@ h4{
   width: 5rem;
 }
 
+.flex {
+  display: flex;
+
+}
+
+.flex > img {
+  flex-grow: 1;
+}
