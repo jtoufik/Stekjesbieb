@@ -16,7 +16,6 @@ html {
 body {
   color:rgba(70, 121, 51, 1);
   width: 30em;
-  max-height: 94em;
   background-color: #fff;
   margin:0 auto;
 }
@@ -81,16 +80,16 @@ h1{
 }
 
 h2{
-  text-align: center;
+  text-align:center;
   font-size: 1rem;
-  grid-area: h2;
-  position:absolute;
-  top: 17em;
-  left: 8em;
   color:rgba(34, 77, 18, 0.838);
   background-color: rgba(255, 255, 255, 0.347); 
-  padding: .5em;
   border-radius: 10px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 1rem; 
+  position: relative;
+  top: 6em;
 
 }
 
@@ -105,40 +104,46 @@ h3{
 .koptext{
   color:rgba(34, 77, 18, 0.838);
   max-width: 30em;
-  border-bottom-style: solid;
-  border-bottom-color: rgba(70, 121, 51, 1);;
+  padding-top: 1em;
   padding-bottom: 2em;
   padding-left: 1.5em;
+
 }
 
 main{
+  max-height: 50%;
+  margin: 0;
+  padding: 0;
+  margin-top: -5em;
+}
 
+section{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1ft 1fr 1fr 1fr;
   grid-template-areas:
-    ' h2 h2'
+    ' . . '
     ' blok1 blok2'
     ' blok1 blok2'
     ' blok1 blok2';
   padding: 0;
 }
 
-main, footer{
-  position: relative;
-  bottom: 17.9em;
-}
 
 .overzicht1{
   grid-area: blok1;
   background-color: rgba(70, 121, 51, 0.4);
   margin: 0;
+  padding: 0;
+  padding-top: 5em;
 }
 
 .overzicht2{
   grid-area: blok2;
   background-color: rgba(112, 152, 0, 0.45);
   margin: 0;
+  padding: 0;
+  padding-top: 5em;
 }
 
 ul{
@@ -151,7 +156,7 @@ ul{
 
 li{
   text-align: center;
-  margin-top: 7em;
+  margin-top: 4em;
 }
 
 a:hover img{
@@ -160,16 +165,16 @@ a:hover img{
 
 
 .stekje{
-
-  width: 5rem;
-  height: 5rem;
+  width: 10rem;
+  height: 6rem;
   object-fit: cover;
-  width: 9.5rem;
   border-style: solid;
   border-color: #b5b5b5;
   overflow: hidden;
   display: block;
   margin: 0 auto;
+  border-radius: 5px;
+
 }
 
 a{
@@ -199,7 +204,6 @@ h4{
 
 .flex {
   display: flex;
-
 }
 
 .flex > img {
