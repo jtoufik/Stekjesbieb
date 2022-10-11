@@ -32,8 +32,8 @@ body > * {
 }
 
 .terug{
-  background-color: white;
-  color: rgb(242, 110, 33);
+  background-color:  rgba(70, 121, 51, 1);
+  color: white;
   border-style: solid;
   border-radius: 5px;
   border-width: 1.9px;
@@ -42,12 +42,15 @@ body > * {
   padding-right: 1rem;
   padding-top: .3rem;
   padding-bottom: .3rem;
+  position: relative;
+  bottom: 3.8rem;
+  left: 1rem;
 }
 .terug:hover{
   background-color: rgba(139, 187, 6, 0.412); 
 }
 .doneer:hover{
-  background-color: rgba(139, 187, 6, 0.073); 
+  background-color: rgba(139, 187, 6, 0.601); 
 }
 
 
@@ -57,8 +60,8 @@ body > * {
   left: 1rem;
   font-weight: bold;
   font-size: 18px;
-  background-color: white;
-  color: rgb(242, 110, 33);
+  background-color:  rgba(70, 121, 51, 1);
+  color: white;
   border-style: solid;
   border-radius: 5px;
   border-width: 1.9px;
@@ -77,6 +80,8 @@ header{
 h1{
   text-align: center;
   font-size: 1.5em;
+  border-bottom: solid rgba(34, 77, 18, 0.071);
+  border-width: 50%;
 }
 
 h2{
@@ -92,8 +97,8 @@ h2{
   position: relative;
   top: 6em;
   box-shadow: 0 8px 14px -10px  rgb(79, 107, 0);
-
 }
+
 
 h3{
   color:rgba(34, 77, 18, 0.838);
@@ -125,10 +130,10 @@ section{
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1ft 1fr 1fr 1fr;
   grid-template-areas:
-    ' . . '
-    ' blok1 blok2'
-    ' blok1 blok2'
-    ' blok1 blok2';
+  ' . . '
+  ' blok1 blok2'
+  ' blok1 blok2'
+  ' blok1 blok2';
   padding: 0;
 }
 
@@ -139,7 +144,7 @@ section{
   margin: 0;
   padding: 0;
   padding-top: 5em;
-  height: 46em;
+  height: 100%;
 }
 
 .overzicht2{
@@ -148,8 +153,8 @@ section{
   margin: 0;
   padding: 0;
   padding-top: 5em;
-  height: 46em;
-
+  height: 100%;
+  
 }
 
 ul{
@@ -166,7 +171,8 @@ li{
   margin: 1rem;
   background-color: rgba(255, 255, 255, 0.347); 
   border-radius: 10px;
-
+  box-shadow: 0 8px 14px -10px  rgb(79, 107, 0);
+  
 }
 
 a:hover img{
@@ -174,6 +180,9 @@ a:hover img{
   transform: scale(1.1);
 }
 
+a:hover  h3{
+  color:#fff;
+}
 
 .stekje{
   width: 10rem;
@@ -209,17 +218,208 @@ h4{
   color: white;
   text-align: center;
   font-weight: lighter;
-
+  
 }
 
 .profiel{
   width: 5rem;
 }
 
-.flex {
-  display: flex;
+/*  Stek pagina */
+
+.main-stekje{
+  background-color: rgba(112, 152, 0, 0.45);
+  height: 55em;
+  margin-top: 3em;
 }
 
-.flex > img {
-  flex-grow: 1;
+.kopje
+{
+  position: relative;
+  top: 2rem;
+  margin-bottom: 5rem;
+}
+.plant1{
+  margin:1em;
+  margin-left: 2rem;
+  min-width: 26rem;
+  height: 22rem;
+  border-radius: 5px;
+  object-fit: cover;
+  box-shadow: 0 8px 14px -10px  rgb(79, 107, 0);
+}
+
+.beschrijving-plant{
+  margin-top: 25rem;
+  color:rgba(34, 77, 18, 0.838);
+  max-width: 30em;
+  width: 26em;
+  background-color: rgba(255, 255, 255, 0.347);
+  position: relative;
+  right: 27rem;
+  padding: 0.8rem;
+  border-radius: 5px;
+  padding-bottom: 1em;
+  box-shadow: 0 8px 14px -10px  rgb(79, 107, 0);
+}
+
+.bevestig-kader{
+  background-color: rgba(255, 255, 255, 0.347); 
+  border-radius: 10px;
+  padding: 1rem;
+  width: 35%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  box-shadow: 0 8px 14px -10px  rgb(79, 107, 0);
+}
+
+.bevestig{
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  background-color:  rgba(70, 121, 51, 1);
+  color: white;
+  border-style: solid  rgba(70, 121, 51, 1);;
+  border-radius: 5px;
+  border-width: 1.9px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: 0  auto;
+  padding: .5em;
+  box-shadow: 0 8px 14px -10px  rgb(79, 107, 0);
+}
+
+.bevestig:hover{
+  background-color: rgba(139, 187, 6, 0.601); 
+}
+
+/* Ruil-formulier */
+
+
+.form-main{
+  background-color: rgba(112, 152, 0, 0.45);
+  height: 45em;
+  margin-top: 3em;
+}
+
+.form-stekje{
+  box-sizing: border-box;
+  width: 25rem;
+  display:block;
+  justify-content: center;
+  align-items: center;
+  margin:  0 auto;
+}
+
+/* inhoud formulier  */
+.form-naam{
+  font-size: 1rem;
+  color:rgba(34, 77, 18, 0.838);
+  background-color: rgba(255, 255, 255, 0.347); 
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  box-shadow: 0 8px 14px -10px  rgb(79, 107, 0);
+}
+
+.form-beschrijving{
+  font-size: 1rem;
+  color:rgba(34, 77, 18, 0.838);
+  background-color: rgba(255, 255, 255, 0.347); 
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  padding-top: 0.5rem;
+  box-shadow: 0 8px 14px -10px  rgb(79, 107, 0);
+}
+
+.form-verzorging{
+  font-size: 1rem;
+  color:rgba(34, 77, 18, 0.838);
+  background-color: rgba(255, 255, 255, 0.347); 
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  padding-top: 0.5rem;
+  box-shadow: 0 8px 14px -10px  rgb(79, 107, 0);
+}
+
+#name{
+  margin-top: 0.5rem;
+  width: 23rem;
+  padding:  0.5em;
+  border-radius: 5px;
+  border-width: 1px;
+  
+}
+
+textarea{
+  resize: none;
+  display: block;
+  padding: 1em;
+  width: 23rem;
+  border-radius: 5px;
+  margin-top: 0.5em;
+}
+
+.submit-kader{
+  background-color: rgba(255, 255, 255, 0.347); 
+  border-radius: 10px;
+  padding: 1rem;
+  width: 35%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  box-shadow: 0 8px 14px -10px  rgb(79, 107, 0);
+}
+.submit
+{
+  font-weight: bold;
+  font-size: 18px;
+  background-color:  rgba(70, 121, 51, 1);
+  color: white;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 1.9px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: 0  auto;
+}
+
+.submit:hover{
+  background-color: rgba(139, 187, 6, 0.601); 
+}
+
+
+
+/* End pagina*/
+
+.end-main{
+  background-color: rgba(112, 152, 0, 0.45);
+  height: 100%;
+  margin-top: 3em;
+  padding-bottom: 1.5rem;
+}
+.check{
+  display:flex;
+  justify-content: right;
+  margin-left: 65%;
+  position: relative;
+  bottom: 2.9rem;
+}
+
+.google-kopje{
+
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+.google{
+  object-fit: cover;
+  width:90%;
+  display: block;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 5px;
 }
