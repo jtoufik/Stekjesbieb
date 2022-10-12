@@ -9,17 +9,14 @@ html {
     font-family: arial ; 
 }
 
-body{
-  width: 30rem;
-}
-  
+
 @font-face {
   font-family: BuurtCampusArial-Bold;
   src: url("../font/BuurtCampusArial-Bold.ttf"); 
 }
 
 
-/* @media (max-width: 35em) and (min-width:20em){ */
+@media (max-width: 35em) and (min-width:20em){ 
 
   
 body {
@@ -87,6 +84,9 @@ header{
 }
 
 h1{
+  display: block;
+  align-items: center;
+  margin: 0 auto;
   font-family: buurtCampusArial-Bold;
   text-align: center;
   font-size: 1.5em;
@@ -478,4 +478,5 @@ textarea{
   border-radius: 5px;
 }
 
+}
 
