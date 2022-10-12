@@ -6,16 +6,20 @@
 html {
     background-color: #f5f5f5;
     font: 100%/1.4;
-    font-family: "josefin-sans", sans-serif ; 
+    font-family: arial ; 
+}
+
+body{
+  width: 30rem;
 }
   
 @font-face {
-  font-family: "josefin-sans";
-  src: url("./fonts/josefin-sans"); 
+  font-family: BuurtCampusArial-Bold;
+  src: url("../font/BuurtCampusArial-Bold.ttf"); 
 }
 
 
-@media (max-width: 35em) and (min-width:20em){
+/* @media (max-width: 35em) and (min-width:20em){ */
 
   
 body {
@@ -48,8 +52,9 @@ body > * {
   border-radius: 5px;
   border-width: 1.9px;
   border-color: rgba(70, 121, 51, 1);
-  padding: 0.3rem 0.5rem 0.1rem;
+  padding: 0.5rem 0.5rem;
   margin-left: 1em;
+  font-family: buurtCampusArial-Bold;
 }
 .terug:hover{
   background-color: rgba(139, 187, 6, 0.412); 
@@ -60,7 +65,7 @@ body > * {
 
 
 .doneer{
-  padding: 0.3rem 0.5rem 0.1rem;
+  padding: 0.5rem 0.5rem;
   margin-left: 1em;
   font-weight: bold;
   font-size: 1em;
@@ -70,6 +75,7 @@ body > * {
   border-radius: 5px;
   border-width: 1.9px;
   border-color: rgba(70, 121, 51, 1);
+  font-family: buurtCampusArial-Bold;
 }
 
 .h1-end{
@@ -81,10 +87,13 @@ header{
 }
 
 h1{
+  font-family: buurtCampusArial-Bold;
   text-align: center;
   font-size: 1.5em;
   border-bottom: solid rgba(34, 77, 18, 0.071);
   border-width: 50%;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 h2{
@@ -96,7 +105,9 @@ h2{
   color:rgba(34, 77, 18, 0.838);
   background-color: rgba(255, 255, 255, 0.347); 
   border-radius: 10px;
-  padding: 1rem; 
+  padding: 1rem 0.5rem ; 
+  margin-left: 1em;
+  margin-right: 1em;
   box-shadow: 0 8px 14px -10px  rgb(79, 107, 0);
 }
 
@@ -128,7 +139,6 @@ h3{
 main{
   margin: 0;
   padding: 0;
-  margin-top: -5em;
 }
 
 section{
@@ -149,7 +159,8 @@ section{
   background-color: rgba(70, 121, 51, 0.4);
   margin: 0;
   padding: 0;
-  padding-top: 5em;
+  padding-top: 8em;
+  padding-bottom: 5rem;
   height: 100%;
 }
 
@@ -158,7 +169,8 @@ section{
   background-color: rgba(112, 152, 0, 0.45);
   margin: 0;
   padding: 0;
-  padding-top: 5em;
+  padding-top: 8em;
+  padding-bottom: 5rem;
   height: 100%;
   
 }
@@ -215,9 +227,18 @@ footer{
   background-color:rgba(242, 110, 33, 0.578);
 }
 
+.campus-logo{
+  width: 18rem;
+  height: 5rem;
+  margin: 0 auto;
+  display: block;
+  align-items: center;
+}
+
 h4{
   color:white;
   text-align: center;
+  font-family: buurtCampusArial-Bold;
 }
 
 .p-footer{
@@ -290,6 +311,7 @@ h4{
   font-weight: bold;
   text-align: center;
   font-size: 1em;
+  font-family: buurtCampusArial-Bold;
   background-color:  rgba(70, 121, 51, 1);
   color: white;
   border-style: solid  rgba(70, 121, 51, 1);;
@@ -322,6 +344,7 @@ h4{
 {
   margin: 0 auto;
   margin: 1rem 1rem 2rem ;
+
 }
 
 .form-stekje{
@@ -407,6 +430,8 @@ textarea{
   justify-content: center;
   align-items: center;
   margin: 0  auto;
+  font-family: buurtCampusArial-Bold;
+  padding: 0.5rem 0.5rem;
 }
 
 .submit:hover{
@@ -446,9 +471,11 @@ textarea{
 .google{
   object-fit: cover;
   width:90%;
+  height: 40rem;
   display: block;
   align-items: center;
   margin: 0 auto;
   border-radius: 5px;
 }
-}
+
+
