@@ -50,8 +50,9 @@ body {
 .header-bottom{
     background-image: url("../assets/header-bg.jpg");
     background-size: cover;
-    background-position-y: bottom;
-    height: 100%;
+    background-position-y: center;
+    padding: 1em;
+    height: 24em;
 }
 
 
@@ -59,14 +60,17 @@ body {
     background-color: rgba(255, 255, 255, 0.728); 
     backdrop-filter: blur(-5px);
     box-shadow: 0px 10px 20px rgba(0,0,0,0.4); 
-    padding: 2em;
+    padding: 1em;
+    width: 10em;
+    margin: 0 auto;
+    margin-top: 6rem;
     border-radius: 5px;
 }   
 
 h1{
     font-family: buurtCampusArial-Bold;
     text-align: center;
-    font-size: 3em;
+    font-size:  3em;
     margin-top: 2em;
     margin-bottom: 2em;
     color:rgba(34, 77, 18, 0.838);
@@ -75,7 +79,7 @@ h1{
 .koptext{
     color: rgb(4, 9, 2);
     max-width: 32em;
-    font-size: 22px;
+    font-size: 18px;
     padding-top: 1em;
     padding-bottom: 2em;
     width: 80%;
@@ -235,16 +239,20 @@ footer{
 
 
 article{
-    background-color:  rgba(255, 255, 255, 0.128); 
-    backdrop-filter: blur(-5px);
-    box-shadow: 0px 10px 20px rgba(0,0,0,0.4); 
+
     padding: 1em;
-    margin: 3em 3em;
     margin-bottom: 1em;
-    border-radius: 5px;
 }
 
+.contact{
+    border-right: solid white;
+    padding-right: 10em;
+}
 
+.overons{
+    border-left:solid white;
+    padding-left: 10em;
+}
 
 .campus-logo{
     width: 40%;
@@ -279,75 +287,88 @@ h4{
 /*  ---------------------  Stek pagina -------------------------- */
 
 .terug{
-        background-color:  rgba(70, 121, 51, 1);
-        color: white;
-        border-style: solid;
-        border-radius: 5px;
-        border-width: 1.9px;
-        border-color: rgba(70, 121, 51, 1);
-        padding: 0.5rem 0.5rem;
-        margin-left: 1em;
-        font-family: buurtCampusArial-Bold;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3em;
+    margin-top: .2em;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: rgba(34, 77, 18, 1);
+    font-family: buurtCampusArial-Bold;
     }
     
     .terug:hover{
-        background-color: rgba(139, 187, 6, 0.412); 
-    }
-      
-      .main-stekje{
-        background-color: rgba(112, 152, 0, 0.45);
-        min-height: 55em;
-        margin-top: 3em;
-        min-width: 20rem;
-        padding-top: 2rem;
-      }
-      
-      .kopje
-      {
-        margin: 0 auto;
-        margin-bottom: 1.5em;
-        margin-top: 1em;
-        margin-left: 0.5em;
-        margin-right: 0.5em;
-      }
-      .plant1{
-        display: block;
-        justify-items: center;
-        align-items: center;
-        margin: 0 auto;
-        margin-top: 2rem;
-        min-width: 19rem;
-        height: 22rem;
-        border-radius: 5px;
-        object-fit: cover;
-        box-shadow: 0 8px 14px -10px  rgb(79, 107, 0);
-      }
-      
-      .beschrijving-plant{
-        color:rgba(34, 77, 18, 0.838);
-        width: 80%;
-        background-color: rgba(255, 255, 255, 0.347);
-        display: block;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        margin-top: 2rem;
-        border-radius: 5px;
-        padding: 1em;
-        box-shadow: 0 8px 14px -10px  rgb(79, 107, 0);
-      }
-      
-      .bevestig-kader{
-        background-color: rgba(255, 255, 255, 0.347); 
-        border-radius: 10px;
-        padding: 1rem;
-        width: 35%;
-        margin: 0 auto;
-        margin-top: 2rem;
-        box-shadow: 0 8px 14px -10px  rgb(79, 107, 0);
-      }
-      
-      .bevestig{
+        color: rgba(242, 110, 33, 0.936); 
+    } 
+
+.main-stekje{
+    background-color:rgba(139, 187, 6, 0.187); 
+    backdrop-filter: blur(-5px);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.4); 
+    border-radius: 5px;
+    margin:  0 auto;
+    display: block;
+    justify-content: center;
+    margin-bottom: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 70%;
+}
+
+.kopje
+{
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.kader-stekje{
+    display: flex;
+    justify-content: space-between;
+}
+
+.plant1{
+    display: block;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    margin: 1em 1em;
+    min-width: 19rem;
+    width: 40rem;
+    height: 20rem;
+    border-radius: 5px;
+    object-fit: cover;
+    box-shadow: 0 8px 14px -10px  rgb(79, 107, 0);
+}
+
+.beschrijving-plant{
+    color:black;
+    width: 40rem;
+    height: 20rem;
+    background-color: rgba(255, 255, 255, 0.347);
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin: 1em 1em;
+    border-radius: 5px;
+    padding: 1em 2em;
+    padding-top: 5rem;
+    box-shadow: 0 8px 14px -10px  rgb(79, 107, 0);
+}
+
+.bevestig-kader{
+    background-color: rgba(255, 255, 255, 0.347); 
+    border-radius: 10px;
+    padding: 1rem;
+    width: 35%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 14px -10px  rgb(79, 107, 0);
+}
+
+.bevestig{
         font-weight: bold;
         text-align: center;
         font-size: 1em;
@@ -363,160 +384,173 @@ h4{
         margin: 0  auto;
         padding: .5rem;
         box-shadow: 0 8px 14px -10px  rgb(79, 107, 0);
-      }
-      
-      .bevestig:hover{
-        background-color: rgba(139, 187, 6, 0.601); 
-      }
-      
-      /* Ruil-formulier */
-      
-      
-      .form-main{
-        background-color: rgba(112, 152, 0, 0.45);
-        max-height: 40rem;
-        height: 38rem;
-        margin:  0;
-        padding-top: 1rem;
-        width: 100%;
-      }
-      .kopje-form
-      {
-        margin: 0 auto;
-        margin: 1rem 1rem 2rem ;
-      
-      }
-      
-      .form-stekje{
-        box-sizing: border-box;
-        width: 84%;
-        display:block;
-        justify-content: center;
-        align-items: center;
-        margin:  0 auto;
-        margin: 1rem 2rem 1rem;
-      }
-      
-      /* inhoud formulier  */
-      .form-naam{
-        font-size: 1rem;
-        color:rgba(34, 77, 18, 0.838);
-        background-color: rgba(255, 255, 255, 0.347); 
-        border-radius: 10px;
-        margin-bottom: 1rem;
-        padding: 1rem;
-        box-shadow: 0 8px 14px -10px  rgb(79, 107, 0);
-      }
-      
-      .form-beschrijving{
-        font-size: 1rem;
-        color:rgba(34, 77, 18, 0.838);
-        background-color: rgba(255, 255, 255, 0.347); 
-        border-radius: 10px;
-        margin-bottom: 1rem;
-        padding: 1rem;
-        padding-top: 0.5rem;
-        box-shadow: 0 8px 14px -10px  rgb(79, 107, 0);
-      }
-      
-      .form-verzorging{
-        font-size: 1rem;
-        color:rgba(34, 77, 18, 0.838);
-        background-color: rgba(255, 255, 255, 0.347); 
-        border-radius: 10px;
-        margin-bottom: 1rem;
-        padding: 1rem;
-        padding-top: 0.5rem;
-        box-shadow: 0 8px 14px -10px  rgb(79, 107, 0);
-      }
-      
-      #name{
-        margin-top: 0.5rem;
-        width: 100%;
-        padding:  0.5em;
-        border-radius: 5px;
-        border-width: 1px;
-        
-      }
-      
-      textarea{
-        resize: none;
-        display: block;
-        padding: 1em;
-        width: 100%;
-        border-radius: 5px;
-        margin-top: 0.5em;
-      }
-      
-      .submit-kader{
-        background-color: rgba(255, 255, 255, 0.347); 
-        border-radius: 10px;
-        padding: 1rem;
-        width: 40%;
-        margin: 0 auto;
-        margin-top: 2rem;
-        box-shadow: 0 8px 14px -10px  rgb(79, 107, 0);
-      }
-      .submit
-      {
-        font-weight: bold;
-        font-size: 1em;
-        background-color:  rgba(70, 121, 51, 1);
-        color: white;
-        border-style: solid;
-        border-radius: 5px;
-        border-width: 1.9px;
-        display: block;
-        justify-content: center;
-        align-items: center;
-        margin: 0  auto;
-        font-family: buurtCampusArial-Bold;
-        padding: 0.5rem 0.5rem;
-      }
-      
-      .submit:hover{
-        background-color: rgba(139, 187, 6, 0.601); 
-      }
-      
-      
-      
-      /* End pagina*/
-      
-      .header-bottom{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 2em;
-        gap: .5em;
-      }
-      
-      
-      .end-main{
-        background-color: rgba(112, 152, 0, 0.45);
-        max-height: 54rem;
-        height: 52rem;
-        margin:  0;
-        padding-top: 1rem;
-        width: 100%;
-      }
-      .check{
-        width: 8%;
-      }
-      
-      .google-kopje{
-      
-        margin: 0 auto;
-        margin-bottom: 2em;
-      }
-      
-      .google{
-        object-fit: cover;
-        width:90%;
-        height: 40rem;
-        display: block;
-        align-items: center;
-        margin: 0 auto;
-        border-radius: 5px;
-      }
+    }
 
+    .bevestig:hover{
+        background-color: rgba(139, 187, 6, 0.601); 
 }
 
+/* ---------------------------------  Ruil-formulier  ------------------------------------- */
+
+.form-main{
+    background-color:rgba(139, 187, 6, 0.187); 
+    backdrop-filter: blur(-5px);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.4); 
+    border-radius: 5px;
+    max-height: 45rem;
+    height: 38rem;
+    margin:  0 auto;
+    display: block;
+    justify-content: center;
+    margin-bottom: 5rem;
+    padding-top: 1rem;
+    width: 70%;
+}
+
+.kopje-form{
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.form-stekje{
+    width: 50%;
+    display:block;
+    justify-content: center;
+    align-items: center;
+    margin:  0 auto;
+}
+
+/* inhoud formulier  */
+
+.form-naam{
+    font-size: 1rem;
+    color:rgba(34, 77, 18, 0.838);
+    background-color: rgba(255, 255, 255, 0.347); 
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: 0 8px 14px -10px  rgb(79, 107, 0);
+}
+
+.form-beschrijving{
+    font-size: 1rem;
+    color:rgba(34, 77, 18, 0.838);
+    background-color: rgba(255, 255, 255, 0.347); 
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    padding-top: 0.5rem;
+    box-shadow: 0 8px 14px -10px  rgb(79, 107, 0);
+}
+
+.form-verzorging{
+    font-size: 1rem;
+    color:rgba(34, 77, 18, 0.838);
+    background-color: rgba(255, 255, 255, 0.347); 
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    padding-top: 0.5rem;
+    box-shadow: 0 8px 14px -10px  rgb(79, 107, 0);
+}
+
+#name{
+    margin-top: 0.5rem;
+    width: 100%;
+    padding:  0.5em;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+textarea{
+    resize: none;
+    display: block;
+    padding: 1em;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+.submit-kader{
+    background-color: rgba(255, 255, 255, 0.347); 
+    border-radius: 10px;
+    padding: 1rem;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    box-shadow: 0 8px 14px -10px  rgb(79, 107, 0);
+}
+
+.submit{
+    font-weight: bold;
+    font-size: 1em;
+    background-color:  rgba(70, 121, 51, 1);
+    color: white;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1.9px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 0  auto;
+    font-family: buurtCampusArial-Bold;
+    padding: 0.5rem 0.5rem;
+}
+
+.submit:hover{
+    background-color: rgba(139, 187, 6, 0.601); 
+}
+
+/* End pagina*/
+
+.header-laag{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+    gap: .9em;
+}
+
+#h1-end{
+    font-size: 2em;
+}
+.end-main{
+    background-color:rgba(139, 187, 6, 0.187); 
+    backdrop-filter: blur(-5px);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.4); 
+    border-radius: 5px;
+    margin:  0 auto;
+    display: block;
+    justify-content: center;
+    margin-bottom: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    width: 70%;
+}
+
+.check{
+    width: 2%;
+    margin-bottom: 0.5em;
+}
+
+.google-kopje{
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+
+#map{
+    background-image: url("../assets/google2.png");
+    background-size: cover;
+    height: 30rem;
+    width: 70%;
+    display: block;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.campus2{
+    margin-top: 5rem;
+}
+
+}
