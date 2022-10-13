@@ -16,11 +16,10 @@ html {
 }
 
 
-@media (max-width: 35em) and (min-width:20em){ 
+@media (max-width: 45em) and (min-width:20em){ 
 
   
 body {
-  color:rgba(70, 121, 51, 1);
   background-color: #fff;
   margin:0 auto;
 }
@@ -30,50 +29,73 @@ body > * {
 }
 
 .header-top{
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2em;
-}
-
-.logo
-{
-  width: 70%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.terug{
-  background-color:  rgba(70, 121, 51, 1);
-  color: white;
-  border-style: solid;
-  border-radius: 5px;
-  border-width: 1.9px;
-  border-color: rgba(70, 121, 51, 1);
-  padding: 0.5rem 0.5rem;
-  margin-left: 1em;
-  font-family: buurtCampusArial-Bold;
-}
-.terug:hover{
-  background-color: rgba(139, 187, 6, 0.412); 
-}
-.doneer:hover{
-  background-color: rgba(139, 187, 6, 0.601); 
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: solid rgba(34, 77, 18, 0.071);
+    padding-bottom: 1em;
 }
 
 
 .doneer{
-  padding: 0.5rem 0.5rem;
-  margin-left: 1em;
+  display: flex;
+  justify-content: flex-end;
   font-weight: bold;
-  font-size: 1em;
-  background-color:  rgba(70, 121, 51, 1);
-  color: white;
-  border-style: solid;
+  margin-right: 0.5em;
+  font-size: 1.5em;
+  color: rgba(34, 77, 18, 1);
+  font-family: buurtCampusArial-Bold;
+  transition: transform .2s;
+}
+
+.logo
+{
+  width: 100%;
+  height: auto;
+  margin-left: .5em;
+}
+
+.header-bottom{
+  background-image: url("../assets/header-bg.jpg");
+  background-size: cover;
+  width: 100%;
+  background-position-x: -3em;
+  padding: 1em;
+  height: 15em;
+}
+
+.header-h1{
+  background-color: rgba(255, 255, 255, 0.728); 
+  backdrop-filter: blur(-5px);
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.4); 
+  padding: 1em;
+  width: 9em;
+  margin: 0 auto;
+  margin-top: 8.5rem;
   border-radius: 5px;
-  border-width: 1.9px;
-  border-color: rgba(70, 121, 51, 1);
+  position: relative;
+  bottom: 3em;
+}   
+
+.koptext-stekjes{
+  color:rgba(34, 77, 18, 0.838);
+  font-size: 16px;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 8rem;
   font-family: buurtCampusArial-Bold;
 }
+
+
+.doneer:hover{
+  color: rgba(242, 110, 33, 0.936); 
+  transform: scale(1.1);
+}
+
 
 .h1-end{
   font-size: 1.2em;
@@ -90,25 +112,26 @@ h1{
   font-family: buurtCampusArial-Bold;
   text-align: center;
   font-size: 1.5em;
-  border-bottom: solid rgba(34, 77, 18, 0.071);
   border-width: 50%;
   margin-top: 2em;
   margin-bottom: 2em;
+  color: rgba(34, 77, 18, 1);
 }
 
 h2{
   display: block;
+  font-family: buurtCampusArial-Bold;
   justify-content: center;
   margin: 0 auto;
   text-align:center;
   font-size: 1rem;
-  color:rgba(34, 77, 18, 0.838);
-  background-color: rgba(255, 255, 255, 0.347); 
-  border-radius: 10px;
-  padding: 1rem 0.5rem ; 
-  margin-left: 1em;
-  margin-right: 1em;
-  box-shadow: 0 8px 14px -10px  rgb(79, 107, 0);
+  color: white;
+  background-image: url("../assets/leaves3.jpg");
+  background-size: cover;
+  opacity: 90%;
+  padding: 2rem 0.5rem ; 
+  width: 100%;
+  box-shadow: 0 8px 14px -10px  rgb(9, 9, 9);
 }
 
 .h2-begin
@@ -119,16 +142,18 @@ h2{
 
 
 h3{
-  color:rgba(34, 77, 18, 0.838);
+  color:  rgba(34, 77, 18, 1);
   text-align: center;
   margin-bottom: 5em;
   font-weight: lighter;
   font-size: 1rem;
+  transition: transform .2s;
 }
 
 .koptext{
-  color:rgba(34, 77, 18, 0.838);
+  color: rgb(4, 9, 2);
   max-width: 30em;
+  font-size: 18px;
   padding-top: 1em;
   padding-bottom: 2em;
   width: 80%;
@@ -136,12 +161,15 @@ h3{
   margin-right: auto;
 }
 
+
 main{
   margin: 0;
   padding: 0;
 }
 
 section{
+  width: 85%;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1ft 1fr 1fr 1fr;
@@ -155,24 +183,24 @@ section{
 
 
 .overzicht1{
+
   grid-area: blok1;
-  background-color: rgba(70, 121, 51, 0.4);
   margin: 0;
   padding: 0;
-  padding-top: 8em;
+  padding-top: 4em;
   padding-bottom: 5rem;
   height: 100%;
+  margin-right: .5em;
 }
 
 .overzicht2{
   grid-area: blok2;
-  background-color: rgba(112, 152, 0, 0.45);
   margin: 0;
   padding: 0;
-  padding-top: 8em;
+  padding-top: 4em;
   padding-bottom: 5rem;
+  margin-left: .5em;
   height: 100%;
-  
 }
 
 ul{
@@ -184,36 +212,39 @@ ul{
 
 li{
   text-align: center;
-  padding-top: 2rem;
-  height: 12rem;
-  margin: 1rem;
-  background-color: rgba(255, 255, 255, 0.347); 
+  padding: 2.5rem 1.6rem;
+  max-height: 13rem;
+  max-width: 36em;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  margin-bottom: 3.5em;
+  background-color:rgba(255, 255, 255, 0.638); 
   border-radius: 10px;
-  box-shadow: 0 8px 14px -10px  rgb(79, 107, 0);
-  
+  box-shadow: 0 8px 14px -10px  rgb(10, 13, 0);
 }
 
-a:hover img{
-  box-shadow:  0em 0 1em   rgb(79, 107, 0);
+a:hover img {
+  box-shadow:  0em 0 1em   rgb(255, 255, 255);
   transform: scale(1.1);
 }
 
 a:hover  h3{
-  color:#fff;
+  color: rgba(242, 111, 33, 1); 
+  transform: scale(1.1);
 }
+
 
 .stekje{
   width: 10rem;
   height: 6rem;
   object-fit: cover;
-  border-style: solid;
-  border-color:rgba(34, 77, 18, 0.209);
   overflow: hidden;
   display: block;
   margin: 0 auto;
   border-radius: 5px;
   transition: transform .2s;
-  box-shadow: 0 8px 14px -10px  rgb(79, 107, 0);
+  box-shadow: 0 8px 14px -10px  rgb(0, 0, 0);
 }
 
 a{
@@ -224,19 +255,45 @@ a{
 
 
 footer{
-  background-color:rgba(242, 110, 33, 0.578);
+  background-image: url("../assets/hout5.jpeg");
+  background-size: cover;
+  margin:0;
+
+}
+
+.footer-top{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+
+article{
+
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.contact{
+  border-right: solid white;
+  padding-right: 3em;
+}
+
+.overons{
+  border-left:solid white;
+  padding-left: 3em;
 }
 
 .campus-logo{
-  width: 18rem;
-  height: 5rem;
+  width: 80%;
+  height: 60%;
   margin: 0 auto;
   display: block;
   align-items: center;
 }
 
 h4{
-  color:white;
+  color: white;
   text-align: center;
   font-family: buurtCampusArial-Bold;
 }
@@ -245,21 +302,44 @@ h4{
   color: white;
   text-align: center;
   font-weight: lighter;
-  
 }
 
 .profiel{
   width: 5rem;
 }
 
-/*  Stek pagina */
+.copy{
+  color: white;
+  text-align: center;
+  font-weight: lighter;
+}
+
+/* --------------------------------  Stek pagina -------------------------------- */
+
+.terug{
+display: flex;
+justify-content: flex-end;
+margin-right: .5em;
+margin-top: .2em;
+font-weight: bold;
+font-size: 1em;
+color: rgba(34, 77, 18, 1);
+font-family: buurtCampusArial-Bold;
+transition: transform.2s;
+}
+
+.terug:hover{
+  color: rgba(242, 110, 33, 0.936); 
+  transform: scale(1.1);
+}
 
 .main-stekje{
-  background-color: rgba(112, 152, 0, 0.45);
-  min-height: 55em;
-  margin-top: 3em;
-  min-width: 20rem;
-  padding-top: 2rem;
+  background-color:rgba(139, 187, 6, 0.187); 
+  backdrop-filter: blur(-5px);
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.4); 
+  margin-bottom: 5rem;
+  padding-bottom: 2rem;
+  width: 100%;
 }
 
 .kopje
@@ -267,8 +347,6 @@ h4{
   margin: 0 auto;
   margin-bottom: 1.5em;
   margin-top: 1em;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
 }
 .plant1{
   display: block;
@@ -329,21 +407,21 @@ h4{
   background-color: rgba(139, 187, 6, 0.601); 
 }
 
-/* Ruil-formulier */
+/* ------------------------- Ruil-formulier -------------------------- */
 
 
 .form-main{
-  background-color: rgba(112, 152, 0, 0.45);
-  max-height: 40rem;
-  height: 38rem;
-  margin:  0;
-  padding-top: 1rem;
+  background-color:rgba(139, 187, 6, 0.187); 
+  backdrop-filter: blur(-5px);
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.4); 
+  padding-bottom: 2.5rem;
   width: 100%;
+  margin-bottom: 4rem;
 }
 .kopje-form
 {
   margin: 0 auto;
-  margin: 1rem 1rem 2rem ;
+  margin-bottom: 4rem;
 
 }
 
@@ -442,40 +520,50 @@ textarea{
 
 /* End pagina*/
 
-.header-bottom{
+.header-laag{
+  margin: 0 auto;
   display: flex;
   justify-content: center;
-  margin-bottom: 2em;
-  gap: .5em;
+  margin-top: 1em;
 }
 
-
+#h1-end{
+  font-size: 18px;
+}
 .end-main{
-  background-color: rgba(112, 152, 0, 0.45);
-  max-height: 54rem;
-  height: 52rem;
-  margin:  0;
-  padding-top: 1rem;
+  background-color:rgba(139, 187, 6, 0.187); 
+  backdrop-filter: blur(-5px);
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.4); 
+  margin-bottom: 5rem;
+  padding-bottom: 5rem;
   width: 100%;
 }
+
 .check{
-  width: 8%;
+  width: 4%;
+  margin-bottom: 0.2em;
+  position: relative;
+  right: 9em;
 }
 
 .google-kopje{
-
   margin: 0 auto;
   margin-bottom: 2em;
 }
 
-.google{
-  object-fit: cover;
-  width:90%;
-  height: 40rem;
+#map{
+  background-image: url("../assets/google2.png");
+  background-size: cover;
+  height: 30rem;
+  width: 70%;
   display: block;
   align-items: center;
   margin: 0 auto;
   border-radius: 5px;
+}
+
+.campus2{
+  margin-top: 5rem;
 }
 
 }

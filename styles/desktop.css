@@ -40,10 +40,12 @@ body {
     font-size: 1.5em;
     color: rgba(34, 77, 18, 1);
     font-family: buurtCampusArial-Bold;
+    transition: transform .2s;
 }
 
 .doneer:hover{
     color: rgba(242, 110, 33, 0.936); 
+    transform: scale(1.1);
 }
 
 
@@ -295,11 +297,11 @@ h4{
     font-size: 1.5em;
     color: rgba(34, 77, 18, 1);
     font-family: buurtCampusArial-Bold;
-    }
+}
     
-    .terug:hover{
-        color: rgba(242, 110, 33, 0.936); 
-    } 
+.terug:hover{
+    color: rgba(242, 110, 33, 0.936); 
+} 
 
 .main-stekje{
     background-color:rgba(139, 187, 6, 0.187); 
@@ -369,25 +371,25 @@ h4{
 }
 
 .bevestig{
-        font-weight: bold;
-        text-align: center;
-        font-size: 1em;
-        font-family: buurtCampusArial-Bold;
-        background-color:  rgba(70, 121, 51, 1);
-        color: white;
-        border-style: solid  rgba(70, 121, 51, 1);;
-        border-radius: 5px;
-        border-width: 1.9px;
-        display: block;
-        justify-content: center;
-        align-items: center;
-        margin: 0  auto;
-        padding: .5rem;
-        box-shadow: 0 8px 14px -10px  rgb(79, 107, 0);
-    }
+    font-weight: bold;
+    text-align: center;
+    font-size: 1em;
+    font-family: buurtCampusArial-Bold;
+    background-color:  rgba(70, 121, 51, 1);
+    color: white;
+    border-style: solid  rgba(70, 121, 51, 1);;
+    border-radius: 5px;
+    border-width: 1.9px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 0  auto;
+    padding: .5rem;
+    box-shadow: 0 8px 14px -10px  rgb(79, 107, 0);
+}
 
-    .bevestig:hover{
-        background-color: rgba(139, 187, 6, 0.601); 
+.bevestig:hover{
+    background-color: rgba(139, 187, 6, 0.601); 
 }
 
 /* ---------------------------------  Ruil-formulier  ------------------------------------- */
