@@ -19,11 +19,11 @@ body {
 
 .logo
 {
-    width: 24rem;
+    width: 15rem;
     height: auto;
     display: flex;
     justify-content: flex-start;
-    margin-left: 2rem;
+    margin-left: 3rem;
     margin-bottom: 1.5rem;
 }
 
@@ -33,8 +33,8 @@ body {
     margin-right: 3em;
     margin-top: .3em;
     font-weight: bold;
-    font-size: 1.7em;
-    color:  rgba(70, 121, 51, 1);
+    font-size: 1.5em;
+    color: rgba(34, 77, 18, 1);
     font-family: buurtCampusArial-Bold;
 }
 
@@ -69,8 +69,8 @@ h1{
 }
 
 .koptext{
-    color:rgba(34, 77, 18, 0.838);
-    max-width: 30em;
+    color: rgb(4, 9, 2);
+    max-width: 32em;
     font-size: 22px;
     padding-top: 1em;
     padding-bottom: 2em;
@@ -79,7 +79,6 @@ h1{
     margin-right: auto;
     margin-top: 5em;
 }
-
 
 h2{
         display: block;
@@ -92,9 +91,25 @@ h2{
         background-image: url("../assets/leaves3.jpg");
         background-size: cover;
         opacity: 90%;
-        padding: 1rem 0.5rem ; 
+        padding: 2rem 0.5rem ; 
         width: 100%;
-        box-shadow: 0 8px 14px -10px  rgb(9, 9, 9);}
+        box-shadow: 0 8px 14px -10px  rgb(9, 9, 9);
+}
+
+
+.koptext-stekjes{
+    color: rgb(4, 9, 2);
+    font-size: 22px;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 9rem;
+    font-family: buurtCampusArial-Bold;
+}
+
 
 .h2-begin
 {
@@ -103,7 +118,7 @@ h2{
 }
 
 h3{
-    color:white;
+    color:  rgba(34, 77, 18, 1);
     text-align: center;
     margin-bottom: 5em;
     font-weight: lighter;
@@ -117,7 +132,8 @@ main{
 }
 
 section{
-
+    width: 75%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1ft 1fr 1fr 1fr;
@@ -135,19 +151,19 @@ section{
     grid-area: blok1;
     margin: 0;
     padding: 0;
-    padding-top: 8em;
+    padding-top: 4em;
     padding-bottom: 5rem;
-    margin-left: 20em;
     height: 100%;
+    margin-right: .5em;
 }
 
 .overzicht2{
     grid-area: blok2;
     margin: 0;
     padding: 0;
-    padding-top: 8em;
+    padding-top: 4em;
     padding-bottom: 5rem;
-    margin-right: 20em;
+    margin-left: .5em;
     height: 100%;
 }
 
@@ -159,13 +175,10 @@ ul{
 }
 
 li{
-    background-image: url("../assets/hout2.jpeg");
-    background-position-y:50%;
-    background-size: cover;
     text-align: center;
-    padding-top: 3rem;
-    height: 22rem;
-    width: 35em;
+    padding: 2.5rem 1.6rem;
+    max-height: 22rem;
+    max-width: 36em;
     margin: 0 auto;
     display: block;
     text-align: center;
@@ -181,7 +194,7 @@ a:hover img {
 }
 
 a:hover  h3{
-    color: rgb(255, 255, 255); 
+    color: rgba(242, 111, 33, 1); 
     transform: scale(1.1);
 }
 
