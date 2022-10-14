@@ -2,6 +2,7 @@
 
 # Titel
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
+![Overzichtpage](https://github.com/jtoufik/Stekjesbieb/blob/main/docs/readme-mockup.html.png?raw=true)
 
 ## Inhoudsopgave
 
