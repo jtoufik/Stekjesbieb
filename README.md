@@ -2,7 +2,7 @@
 
 # Titel
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
-![Overzichtpage](https://github.com/jtoufik/Stekjesbieb/blob/main/docs/readme-mockup.html.png?raw=true)
+![Overzichtpage](https://user-images.githubusercontent.com/112856590/195826941-4a47959a-d0d7-477f-ba03-08e9cb6c673b.png)
 
 ## Inhoudsopgave
 
@@ -12,16 +12,37 @@
   * [Licentie](#licentie)
 
 ## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+
+* Ik heb als user story: Als buurtbewoner van Amsterdam Oost wil ik kunnen zien welke stekjes momenteel in de stekjes-kast zitten, zodat ik kan overwegen een stekje om te ruilen.
+
+* Hier heb ik de stekjes overzicht gerealiseerd.
+
+![overzichtpagina-Plantswap](https://user-images.githubusercontent.com/112856590/195827091-17647cac-0cca-41c4-ad81-494d6283fceb.png)
+
+
+* 🌐 http://jalaltoufik.buurt-campus-oost.student.fdnd.nl/
+
+
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+* HTML. 🖥️ 
+* CSS ⚙️
+* FIGMA✏️
 
+##🛠Installatie & 🔋 Gebruik
 
+* Ik heb hier gebruik gemaakt van een <ul> om zo de stek-overzicht te realisiseren. 
+
+  https://github.com/jtoufik/Stekjesbieb/blob/9c19bc861152776e09980d949f0275adfe23a76e/index.html#L48-L59
+
+* Ik heb ook gebruikt gemaakt van een (grid) om de <ul> te positioneren.
+
+  https://github.com/jtoufik/Stekjesbieb/blob/9c19bc861152776e09980d949f0275adfe23a76e/styles/style.css#L170-L182
 
 ## Bronnen
+
+* https://buurtcampusoost.nl
 
 ## Licentie
 
