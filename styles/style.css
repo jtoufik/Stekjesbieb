@@ -168,7 +168,7 @@ main{
 }
 
 section{
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -390,9 +390,9 @@ transition: transform.2s;
   text-align: center;
   font-size: 1em;
   font-family: buurtCampusArial-Bold;
-  background-color:  rgba(70, 121, 51, 1);
+  background-color:rgba(34, 77, 18, 0.838);
   color: white;
-  border-style: solid  rgba(70, 121, 51, 1);;
+  border-style: solid rgba(34, 77, 18, 0.838);
   border-radius: 5px;
   border-width: 1.9px;
   display: block;
@@ -422,7 +422,6 @@ transition: transform.2s;
 {
   margin: 0 auto;
   margin-bottom: 4rem;
-
 }
 
 .form-stekje{
@@ -486,6 +485,21 @@ textarea{
   margin-top: 0.5em;
 }
 
+.upload{
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+  gap: 3em;
+}
+
+.icon{
+  height: 5rem;
+  border-left: #fff solid;
+  border-right: #fff solid;
+  border-width: 3px;
+  padding: 1em;
+}
+
 .submit-kader{
   background-color: rgba(255, 255, 255, 0.347); 
   border-radius: 10px;
@@ -499,7 +513,7 @@ textarea{
 {
   font-weight: bold;
   font-size: 1em;
-  background-color:  rgba(70, 121, 51, 1);
+  background-color:rgba(34, 77, 18, 0.838);
   color: white;
   border-style: solid;
   border-radius: 5px;
