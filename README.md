@@ -32,11 +32,11 @@
 
 ##🛠Installatie & 🔋 Gebruik
 
-* Ik heb hier gebruik gemaakt van een <ul> om zo de stek-overzicht te realisiseren. 
+* Ik heb hier gebruik gemaakt van een Unordered lists om zo de stek-overzicht te structureren. 
 
   https://github.com/jtoufik/Stekjesbieb/blob/9c19bc861152776e09980d949f0275adfe23a76e/index.html#L48-L59
 
-* Ik heb ook gebruikt gemaakt van een (grid) om de <ul> te positioneren.
+* Ik heb ook gebruikt gemaakt van een (grid) om het overzicht te positioneren.
 
   https://github.com/jtoufik/Stekjesbieb/blob/9c19bc861152776e09980d949f0275adfe23a76e/styles/style.css#L170-L182
 
