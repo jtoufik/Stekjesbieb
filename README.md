@@ -4,14 +4,14 @@
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 ![Overzichtpage](https://user-images.githubusercontent.com/112856590/195826941-4a47959a-d0d7-477f-ba03-08e9cb6c673b.png)
 
-## Inhoudsopgave
+## 📦 Inhoudsopgave
 
   * [Beschrijving](#beschrijving)
   * [Kenmerken](#kenmerken)
   * [Bronnen](#bronnen)
   * [Licentie](#licentie)
 
-## Beschrijving
+## 📝 Beschrijving
 
 * Ik heb als user story: Als buurtbewoner van Amsterdam Oost wil ik kunnen zien welke stekjes momenteel in de stekjes-kast zitten, zodat ik kan overwegen een stekje om te ruilen.
 
@@ -23,8 +23,7 @@
 * 🌐 http://jalaltoufik.buurt-campus-oost.student.fdnd.nl/
 
 
-
-## Kenmerken
+## 📍 Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
 * HTML. 🖥️ 
 * CSS ⚙️
@@ -40,11 +39,11 @@
 
   https://github.com/jtoufik/Stekjesbieb/blob/9c19bc861152776e09980d949f0275adfe23a76e/styles/style.css#L170-L182
 
-## Bronnen
+## 📖  Bronnen
 
 * https://buurtcampusoost.nl
 
-## Licentie
+## ✅ Licentie
 
 ![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
 
